@@ -1,3 +1,9 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+
 #pageLayout{
     display: grid;
     border: 2px solid grey;
@@ -7,9 +13,11 @@
     "ft ft";
 }
 
-.box{
-    border: 1px solid red;
+
+/*.box{
+    border: 2px solid red;
 }
+*/
 
 .header{
     grid-area: hd;
@@ -17,6 +25,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 button{
     display: flex;
@@ -41,9 +50,53 @@ button{
     justify-content: space-around;
 }
 
+
 #footer{
     grid-area: ft;
     display: flex;
     justify-content: center;
     
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 10px;
+    line-height: 10px;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+
+.category{
+    color: green;
+    font-size: 0.8em;
+}
+
+
+.date{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.7em;
+}
+
+
+.postTitle{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+
+.postContent{
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 1em;
 }
