@@ -11,11 +11,24 @@
     border: 1px solid red;
 }
 
-#header{
+.header{
     grid-area: hd;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+button{
+    display: flex;
+    height: 25px;
+    flex-direction: column;
+    align-self:center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 #content{
     grid-area: ct;
@@ -24,6 +37,8 @@
     "a a"
     "b b"
     "c c";
+    grid-gap: 10px;
+    justify-content: space-around;
 }
 
 #footer{
