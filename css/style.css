@@ -31,13 +31,24 @@ body{
 
 button{
     display: flex;
-    height: 25px;
+    padding: 8px;
     flex-direction: column;
     align-self:center;
     justify-content: center;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) ;
+    transition: 0.3s;
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    font-size: 0.5em;
+}
+
+
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 
@@ -68,7 +79,7 @@ button{
     flex-direction: column;
     width: 30vw;
     padding: 30px;
-    line-height: 10px;
+    line-height: 15px;
     border-radius: 18px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -95,7 +106,7 @@ button{
 .postTitle{
     margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 1.5em;
+    font-size: 1.5em;;
 }
 
 
@@ -104,12 +115,21 @@ button{
     font-style: italic;
     font-size: 1em;
 }
+
+
 .logo{
     width: 4vw;
     margin: 5px;  
 }
+
+
 .logo:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
     border-radius: 10px;
     transition: 0.3s;
+}
+
+
+.cntReading{
+    margin-top: auto;
 }
