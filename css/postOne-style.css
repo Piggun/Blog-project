@@ -1,1 +1,60 @@
+@import url(https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);
 @import "header.css";
+@import "footer.css";
+
+body{
+    font-family: 'Mali', cursive;
+    letter-spacing: 1px;
+}
+
+/* .box{
+    border: 2px solid red;
+} */
+
+
+#pageLayout{
+    background-color: paleturquoise;
+    border-radius: 50px;
+    display: grid;
+    /* margin-top: -30px; */
+    /* border: 2px solid grey; */
+    grid-template-areas:
+    "hd hd hd hd"
+    "ct ct ct sd"
+    "ft ft ft ft";
+    grid-template-rows: 1fr 16fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    height: 100vh;
+}
+
+
+.sidebar{
+    grid-area: sd;
+    display: grid;
+    grid-auto-rows: minmax(50px, auto) 1fr;
+    padding: 10px;
+    grid-gap: 30px;
+}  
+
+
+.about{
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.archives{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 30px;
+}
+
+.content{
+    grid-area: ct;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 50px;
+    margin-left: 10px;
+}
