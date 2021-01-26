@@ -1,0 +1,22 @@
+/* Footer ---------------------------------------------- Footer */
+.footer{
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+.logo{
+    width: 4vw;
+    margin: 5px;
+    transition: 0.3s; 
+}
+
+
+.logo:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    border-radius: 10px;
+    transform:scale(1.1)
+}
