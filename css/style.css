@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);
 
 body{
     font-family: 'Mali', cursive;
@@ -20,6 +20,8 @@ body{
     height: 100vh;
 }
 
+
+/* Header ---------------------------------------------- Header */
 h1{
     font-size: 3em;
     text-decoration: underline;
@@ -85,6 +87,9 @@ button:active{
     color: black;
 }
 
+
+
+/* Content ---------------------------------------------- Content */
 #content{
     grid-area: ct;
     display: grid;
@@ -160,6 +165,13 @@ button:active{
 }
 
 
+.cntReading{
+    margin-top: auto;
+}
+
+
+
+/* Footer ---------------------------------------------- Footer */
 .logo{
     width: 4vw;
     margin: 5px;
@@ -171,9 +183,4 @@ button:active{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
     border-radius: 10px;
     transform:scale(1.1)
-}
-
-
-.cntReading{
-    margin-top: auto;
 }
