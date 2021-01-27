@@ -6,7 +6,7 @@
     "a a"
     "b b"
     "c c";
-    grid-row-gap: 5%;
+    /* grid-row-gap: 5%; */
     justify-content: space-evenly;
     align-content:space-around;
 }
@@ -66,4 +66,13 @@
 
 .cntReading{
     margin-top: auto;
+    width: fit-content;
+    /* border: 2px solid red; */
+    background-color: rgba(128, 128, 128, 0.199);
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+
+
 }

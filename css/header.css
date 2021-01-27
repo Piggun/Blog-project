@@ -45,8 +45,7 @@ button{
     font-weight: 800;
     font-size: 1em;
     background-color:rgba(255, 160, 122, 0.89);
-};
-
+}
 
 button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -59,3 +58,4 @@ button:active{
     transition: 0.1s;
     color: black;
 }
+
