@@ -15,13 +15,16 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    padding: 30px;
+    width: 32vw;
+    min-height: 180px;
+    padding: 10px;
     line-height: 15px;
     border-radius: 18px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    /* background-image: url(images/coffee.jpg);
+    background-size: cover; */
 }
 
 
@@ -42,7 +45,7 @@
 
 
 .date{
-    margin-top: 5px;
+    margin-top: 2px;
     margin-bottom: 5px;
     font-size: 0.7em;
     color: rgba(0,0,0,0.5);
@@ -50,8 +53,9 @@
 
 
 .postTitle{
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-left: -1px;
+    margin-top: 5px;
+    margin-bottom: 0;
     font-size: 1.5em;
     font-weight: 500;
 }
@@ -73,6 +77,5 @@
     text-decoration: none;
     padding: 8px;
     border-radius: 10px;
-
-
+    /* align-self: flex-end; */
 }
