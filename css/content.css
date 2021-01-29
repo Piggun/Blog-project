@@ -39,8 +39,32 @@
 
 
 .category{
-    color: green;
     font-size: 0.8em;
+}
+
+
+#world{
+    color: blue;
+}
+
+
+#games{
+    color:tomato;
+}
+
+
+#science{
+    color:green;
+}
+
+
+#cinema{
+    color:red;
+}
+
+
+#tech{
+    color:orange;
 }
 
 
@@ -62,9 +86,10 @@
 
 
 .postContent{
-    margin-top: 5px;
+    margin-top: 1px;
     font-style: italic;
     font-size: 1em;
+    line-height: 18px;
 }
 
 
