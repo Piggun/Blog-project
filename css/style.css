@@ -10,21 +10,17 @@ body{
 
 
 #pageLayout{
-    background-color: paleturquoise;
+    background-color: rgba(175, 238, 238, 0.562);
+    background-image: url(images/797214.jpg);
+    background-size: cover;
     border-radius: 50px;
     display: grid;
     /* margin-top: -30px; */
-    /* border: 2px solid grey; */
+    /* border: 2px solid red; */
     grid-template-areas:
     "hd hd"
     "ct ct"
     "ft ft";
-    grid-template-rows: 1fr 16fr 1fr;
-    height: 100vh;
+    grid-template-rows: minmax(130px auto) 1fr 50px;
+    height: auto;
 }
-
-
-
-/* * {
-    border: 1px solid red;
-} */

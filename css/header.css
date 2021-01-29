@@ -6,6 +6,7 @@ h1{
     background-color: rgba(255, 255, 255, 0.521);
     border-radius: 10px;
     transition: 0.1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 h1:hover{
@@ -19,8 +20,8 @@ h1:hover{
 
 
 .header{
-    background-color: rgba(65, 105, 225, 0.418);
-    border-radius: 40px;
+    background-color: rgba(65, 105, 225, 0.178);
+    border-radius: 50px;
     grid-area: hd;
     display: flex;
     flex-direction: row;
