@@ -157,6 +157,25 @@ h3{
 }
 
 
+.quickLinks{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    bottom: 10px;
+    left: 30px;
+    font-size: 0.8em;
+    cursor: pointer;
+    align-items: center;
+    width: fit-content;
+}
+
+.olderPost, .newerPost{
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 30px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
 /* * {
     border: 1px solid red;
 } */

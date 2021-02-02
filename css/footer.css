@@ -1,5 +1,6 @@
 /* Footer ---------------------------------------------- Footer */
 .footer{
+    position: relative;
     grid-area: ft;
     display: flex;
     justify-content: center;
