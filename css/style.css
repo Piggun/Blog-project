@@ -9,8 +9,9 @@ body{
 }
 
 
+
 #pageLayout{
-    background-color: rgba(175, 238, 238, 0.562);
+    /* background-color: rgba(175, 238, 238, 0.562); */
     background-image: url(images/797214.jpg);
     background-size: cover;
     border-radius: 50px;
