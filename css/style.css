@@ -25,3 +25,31 @@ body{
     grid-template-rows: minmax(130px auto) 1fr 50px;
     height: auto;
 }
+
+
+/* if screen is wider than 600px(Desktop version) */
+@media(max-width:600px){
+    .content{
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+        justify-items: center;
+    }
+    .card{
+        width: 80%;
+    }
+
+    .card:active{
+        transform: scale(1.1);
+    }
+    h1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+
+    .logo{
+        width: 6vw;
+    }
+}
