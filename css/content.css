@@ -78,6 +78,11 @@
 .category{
     font-size: 0.8em;
     font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    padding: 4px;
+    /* margin-left: -4px; */
+    width: fit-content;
 }
 
 

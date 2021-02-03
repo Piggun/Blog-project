@@ -43,7 +43,7 @@ body{
 .about, .archives{
     background-color: rgba(255, 255, 255, 0.719);;
     border-radius: 30px;
-    padding: 10px;
+    padding: 15px;
     font-size: 1em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -66,9 +66,14 @@ body{
 
 
 .category{
+    display: inline;
     color: blue;
     font-size: 0.8em;
     /* border: 2px solid greenyellow; */
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 30px;
+    padding: 4px;
+    margin-left: -4px;
 }
 
 
@@ -87,7 +92,6 @@ h2{
     justify-content: space-between;
     font-size: 0.7em;
     color: rgba(0,0,0,0.5);
-
 }
 
 
@@ -99,6 +103,7 @@ article{
 article p{
     margin: auto;
 }
+
 
 #manchesterPic{
     max-width: 100%;
@@ -191,8 +196,21 @@ h3{
     transition: 0.3s;
 }
 
+
 .quickLink:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+
+.divider{
+    border: none;
+    border-radius: 30px;
+    padding: 1px;
+    background :linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.2),
+        rgba(255, 255, 255, 0));  
 }
 
 /* if screen smaller than 600px(mobile version) */
