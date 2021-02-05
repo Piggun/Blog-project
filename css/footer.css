@@ -1,4 +1,4 @@
-.footer{
+.footer {
     position: relative;
     grid-area: ft;
     display: flex;
@@ -10,14 +10,14 @@
 
 
 /* logo -------------------------------------------------------------- logo */
-.logo{
+.logo {
     width: 4vw;
     margin: 5px;
     transition: 0.3s;
 }
 
 
-.logo:hover{
+.logo:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
     border-radius: 10px;
     transform:scale(1.1)

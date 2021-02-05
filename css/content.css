@@ -1,4 +1,4 @@
-.content{
+.content {
     position: relative;
     grid-area: ct;    /* Assigns .content to the ct grid area */
     display: grid;
@@ -12,8 +12,9 @@
     margin-bottom: 10px;
 }
 
+
 /* card --------------------------------------------------------------------------- card */
-.card{
+.card {
     display: flex;
     flex-direction: column;
     width: 32vw;
@@ -35,19 +36,19 @@
 }
 
 
-.card:hover{
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
     cursor: zoom-in;
 }
 
 
-.card:active{
+.card:active {
     transform: scale(1.3);    /* Increase the scale of the cald when clicked and held */
     z-index: 1;    /* Sets the stack of .card, positioning it in front of elements with lower stack */
 }
 
 
-.category{
+.category {
     font-size: 0.8em;
     font-weight: 500;
     background-color: rgba(0, 0, 0, 0.05);
@@ -57,39 +58,39 @@
 }
 
 
-#world{
+.world {
     color: blue;
 }
 
 
-#games{
+#games {
     color:tomato;
 }
 
 
-#science{
+#science {
     color:green;
 }
 
 
-#cinema{
+#cinema {
     color:red;
 }
 
 
-#tech{
+#tech {
     color:orange;
 }
 
 
-.postTitle{
+.postTitle {
     margin: 8px 0 4px -1px;
     font-size: 1.5em;
     font-weight: 500;
 }
 
 
-.date{
+.date {
     margin-top: 8px;
     margin-bottom: 5px;
     font-size: 0.7em;
@@ -97,7 +98,7 @@
 }
 
 
-.postContent{
+.postContent {
     margin-top: 1px;
     font-style: italic;
     font-size: 1em;
@@ -105,7 +106,7 @@
 }
 
 
-.cntReading{
+.cntReading {
     margin-top: auto;
     width: fit-content;
     background-color: rgba(128, 128, 128, 0.2);
@@ -117,7 +118,7 @@
 
 
 /* changePage Button ----------------------------------------------------------- changePage Button */
-.changePage{
+.changePage {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.89);
     height: 13px;
@@ -131,17 +132,16 @@
 }
 
 
-.changePage:hover{
+.changePage:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);    /* Adds additional shadow when hovered */
 }
 
 
-.previousPage{
+.previousPage {
     left: 3%;
 }
 
 
-.nextPage{
+.nextPage {
     right: 3%;
 }
-

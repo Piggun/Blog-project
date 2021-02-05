@@ -4,14 +4,12 @@
 @import "footer.css";
 
 
-body{
-    font-family: 'Mali', cursive;
+body {
+    font-family: "Mali", cursive;
 }
 
 
-
-#pageLayout{
-    /* background-color: rgba(175, 238, 238, 0.562); */
+#pageLayout {
     background-image: url(images/Background.jpg);
     background-size: cover;
     background-position: center;
@@ -26,8 +24,8 @@ body{
 
 
 /* if screen-width is smaller than 600px(Mobile version) */
-@media(max-width:600px){
-    .content{
+@media(max-width:600px) {
+    .content {
         grid-template-areas:
         "a"
         "b"
@@ -36,30 +34,30 @@ body{
     }
 
     
-    .card{
+    .card {
         width: 80%;
     }
 
 
-    .card:active{
+    .card:active {
         transform: scale(1.1);
     }
 
 
-    h1{
+    h1 {
         margin-top: 5px;
         margin-bottom: 5px;
     }
     
 
-    .logo{
+    .logo {
         width: 6vw;
     }
 }
 
 
 /* if screen-width is smaller than 1000px */
-@media(max-width:1000px){
+@media(max-width:1000px) {
     .logo{
         filter: brightness(50);   /* Increases logos' brigthness */
     }
