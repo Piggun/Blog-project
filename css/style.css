@@ -3,9 +3,9 @@
 @import "content.css";
 @import "footer.css";
 
+
 body{
     font-family: 'Mali', cursive;
-    /* letter-spacing: 1px; */
 }
 
 
@@ -17,14 +17,11 @@ body{
     background-position: center;
     border-radius: 50px;
     display: grid;
-    /* margin-top: -30px; */
-    /* border: 2px solid red; */
     grid-template-areas:
     "hd hd"
     "ct ct"
     "ft ft";
-    grid-template-rows: minmax(130px auto) 1fr 50px;
-    height: auto;
+    grid-template-rows: minmax(130px auto) 1fr 50px;    /* Sets the height of each row */
 }
 
 

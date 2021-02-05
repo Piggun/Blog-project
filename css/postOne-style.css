@@ -2,30 +2,29 @@
 @import "header.css";
 @import "footer.css";
 
+
 body{
     font-family: 'Mali', cursive;
 }
 
 
 #pageLayout{
-    /* background-color: rgba(175, 238, 238, 0.562); */
     background-image: url(images/Background.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50px;
     display: grid;
-    /* margin-top: -30px; */
-    /* border: 2px solid grey; */
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "ct ct ct ct ct ct ct sd"
     "ft ft ft ft ft ft ft ft";
     grid-template-rows: minmax(130px auto) 1fr 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
     grid-row-gap: 10px;
 }
 
 
+/* Sidebar ---------------------------------------------------------------------- Sidebar */
 .sidebar{
     grid-area: sd;
     display: grid;
@@ -55,6 +54,18 @@ body{
 }
 
 
+.postLink > a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.postLink > a:hover{
+    text-decoration: underline;
+}
+
+
+/* Content ------------------------------------------------------------------------ Content */
 .content{
     grid-area: ct;
     padding: 20px;
@@ -66,11 +77,11 @@ body{
 }
 
 
+/* Post Title and info ------------------------------------------------ Post Title and info */
 .category{
     display: inline;
     color: blue;
     font-size: 0.8em;
-    /* border: 2px solid greenyellow; */
     background-color: rgba(0,0,0,0.05);
     border-radius: 30px;
     padding: 4px;
@@ -79,15 +90,12 @@ body{
 
 
 h2{
-    /* border: 2px solid brown; */
     margin: auto;
-    margin-left: -2px;
-    margin-top: -2px;
 }
 
 
 .info{
-    width: 180px;
+    width: 125px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,6 +104,19 @@ h2{
 }
 
 
+.divider{
+    border: none;
+    border-radius: 30px;
+    padding: 1px;
+    background :linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.2),
+        rgba(255, 255, 255, 0));  
+}
+
+
+/* Article ---------------------------------------------------------------------- Article */
 article{
     margin-top: 10px;
 }
@@ -148,18 +169,7 @@ h3{
 }
 
 
-.postLink > a{
-    color: black;
-    text-decoration: none;
-}
-
-
-.postLink > a:hover{
-    text-decoration: underline;
-
-}
-
-
+/* Older/Newer Post Buttons ---------------------------------------------------- Older/Newer Post Buttons */
 .quickLinksBox{
     display: flex;
     position: absolute;
@@ -171,7 +181,6 @@ h3{
     align-items: center;
     width: fit-content;
     text-align: center;
-
 }
 
 
@@ -196,25 +205,14 @@ h3{
 }
 
 
-.divider{
-    border: none;
-    border-radius: 30px;
-    padding: 1px;
-    background :linear-gradient(
-        to right,
-        rgb(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.2),
-        rgba(255, 255, 255, 0));  
-}
-
-/* if screen is narrower than 600px(Mobile version) */
+/* if screen-width is smaller than 600px (Mobile version) */
 @media(max-width:600px){
     #pageLayout{
         grid-template-areas:
         "hd hd hd hd hd hd hd hd"
         "sd sd sd sd sd sd sd sd"
         "ct ct ct ct ct ct ct ct"
-        "ft ft ft ft ft ft ft ft";;
+        "ft ft ft ft ft ft ft ft";
     }
 
 
@@ -262,9 +260,6 @@ h3{
 /* if screen-width is smaller than 1000px */
 @media(max-width:800px){
     .logo{
-        filter: brightness(50);   /* Increases logos' brigthness */
+        filter: brightness(50);   /* Increase logos' brigthness */
     }
 }
-/* * {
-    border: 1px solid red;
-} */

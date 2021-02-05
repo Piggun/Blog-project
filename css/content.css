@@ -1,8 +1,8 @@
 .content{
     position: relative;
-    grid-area: ct;
+    grid-area: ct;    /* Assigns .content to the ct grid area */
     display: grid;
-    grid-template-areas:
+    grid-template-areas:    /* Sets the grid layout of .content */
     "a a"
     "b b"
     "c c";
@@ -12,34 +12,7 @@
     margin-bottom: 10px;
 }
 
-
-.changePage{
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.89);
-    height: 13px;
-    width: 13px;
-    border-radius: 3px;
-    transform: rotate(45deg);
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    top: 50%;
-    transition: 0.3s;
-}
-
-
-.changePage:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-}
-
-.previousPage{
-    left: 3%;
-}
-
-.nextPage{
-    right: 3%;
-}
-
-
+/* card --------------------------------------------------------------------------- card */
 .card{
     display: flex;
     flex-direction: column;
@@ -52,11 +25,10 @@
     background-color: rgba(255, 255, 255, 0.89);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-
     /* This is how I would put a background image on the cards, but I don't like the look of it :) */
     /* background: linear-gradient(
         rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.3) ) ,
+        rgba(255, 255, 255, 0.3)),
         url(images/coffee.jpg);
         background-size: 140% 140%;
         background-position: -30px -25px; */
@@ -68,9 +40,10 @@
     cursor: zoom-in;
 }
 
+
 .card:active{
-    transform: scale(1.3);
-    z-index: 1;
+    transform: scale(1.3);    /* Increase the scale of the cald when clicked and held */
+    z-index: 1;    /* Sets the stack of .card, positioning it in front of elements with lower stack */
 }
 
 
@@ -80,8 +53,7 @@
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 30px;
     padding: 4px;
-    /* margin-left: -4px; */
-    width: fit-content;
+    width: fit-content;    /* Sets the width of .category based on the width of the content */
 }
 
 
@@ -110,21 +82,18 @@
 }
 
 
+.postTitle{
+    margin: 8px 0 4px -1px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+
 .date{
     margin-top: 8px;
     margin-bottom: 5px;
     font-size: 0.7em;
     color: rgba(0,0,0,0.5);
-}
-
-
-.postTitle{
-    margin-left: -1px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 22px;
 }
 
 
@@ -139,12 +108,40 @@
 .cntReading{
     margin-top: auto;
     width: fit-content;
-    /* border: 2px solid red; */
-    background-color: rgba(128, 128, 128, 0.199);
+    background-color: rgba(128, 128, 128, 0.2);
     color: black;
     text-decoration: none;
     padding: 8px;
     border-radius: 10px;
-    /* align-self: flex-end; */
+}
+
+
+/* changePage Button ----------------------------------------------------------- changePage Button */
+.changePage{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.89);
+    height: 13px;
+    width: 13px;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    top: 50%;
+    transition: 0.3s;    /* Sets the duration of the transition */
+}
+
+
+.changePage:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);    /* Adds additional shadow when hovered */
+}
+
+
+.previousPage{
+    left: 3%;
+}
+
+
+.nextPage{
+    right: 3%;
 }
 

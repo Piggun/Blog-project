@@ -1,4 +1,14 @@
-/* Header ---------------------------------------------- Header */
+.header{
+    background-color: rgba(65, 105, 225, 0.178);
+    border-radius: 50px;
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    /* Puts a space between the 3 elements in header class */
+    border-bottom: 4px solid #baffc998;
+}
+
+/* h1 ------------------------------------------------------------------------------------------ h1 */
 h1{
     font-size: 3em;
     font-weight: 700;
@@ -8,6 +18,7 @@ h1{
     text-align: center;
 }
 
+
 h1:hover{
     transform:scale(1.1)
 }
@@ -15,28 +26,17 @@ h1:hover{
 
 #homePageLink{
     color: white;
-    text-decoration: none;
+    text-decoration: none;    /* Removes the underline on the <a> element */
 }
 
 
-.header{
-    background-color: rgba(65, 105, 225, 0.178);
-    border-radius: 50px;
-    grid-area: hd;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 4px solid #baffc998;
-}
-
-
+/* Subscribe and Searh Button -------------------------------------------- Subscribe and Searh Button */
 button{
     font-family: 'EB Garamond', serif;
     display: flex;
     padding: 8px;
     flex-direction: column;
-    align-self:center;
-    justify-content: center;
+    align-self: center;
     border-radius: 20px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
@@ -48,7 +48,7 @@ button{
 
 
 #subs{
-    margin-left: 10vw;
+    margin-left: 10vw;    /* Adjust the margin based on the viewport width */
 }
 
 
@@ -56,9 +56,10 @@ button{
     margin-right: 10vw;
 }
 
+
 button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-    cursor: pointer;
+    cursor: pointer;    /* Changes the cursor to pointer when hovered */
 }
 
 
@@ -67,7 +68,3 @@ button:active{
     transition: 0.1s;
     color: black;
 }
-
-/* *{
-    border: 2px solid red !important;
-} */
