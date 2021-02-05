@@ -4,12 +4,7 @@
 
 body{
     font-family: 'Mali', cursive;
-    /* letter-spacing: 0.5px; */
 }
-
-/* .box{
-    border: 2px solid red;
-} */
 
 
 #pageLayout{
@@ -22,11 +17,11 @@ body{
     /* margin-top: -30px; */
     /* border: 2px solid grey; */
     grid-template-areas:
-    "hd hd hd hd"
-    "ct ct ct sd"
-    "ft ft ft ft";
+    "hd hd hd hd hd hd hd hd"
+    "ct ct ct ct ct ct ct sd"
+    "ft ft ft ft ft ft ft ft";
     grid-template-rows: minmax(130px auto) 1fr 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 10px;
 }
 
@@ -37,7 +32,8 @@ body{
     grid-auto-rows: minmax(50px, auto) 1fr;
     padding: 10px;
     grid-gap: 30px;
-    width: 25vw;
+    max-height: 600px;
+    text-align: center;
 }  
 
 
@@ -45,15 +41,19 @@ body{
     background-color: rgba(255, 255, 255, 0.719);;
     border-radius: 30px;
     padding: 15px;
-    font-size: 1em;
+    font-weight: 300;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 
 .aboutTitle, .archivesTitle{
+    font-size: 1.1em;
     font-weight: 600;
     font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
+
 
 .content{
     grid-area: ct;
@@ -110,7 +110,6 @@ article p{
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
-    /* float: right; */
     transition: 0.3s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -129,9 +128,6 @@ article p{
 
 
 figure{
-    /* margin: auto; */
-    /* display: flex;
-    flex-direction: column; */
     width: 60%;
     float:right;
     margin: auto;
@@ -144,9 +140,6 @@ figcaption{
     float: right;
     font-size: 0.8em;
     margin-top: -5px;
-    /* position: relative;
-    top: 340px;
-    left: 435px; */
 }
 
 
@@ -218,10 +211,10 @@ h3{
 @media(max-width:600px){
     #pageLayout{
         grid-template-areas:
-        "hd hd hd hd"
-        "sd sd sd sd"
-        "ct ct ct ct"
-        "ft ft ft ft";;
+        "hd hd hd hd hd hd hd hd"
+        "sd sd sd sd sd sd sd sd"
+        "ct ct ct ct ct ct ct ct"
+        "ft ft ft ft ft ft ft ft";;
     }
 
 
@@ -229,6 +222,7 @@ h3{
         display: flex;
         flex-direction: row;
         width: 90vw;
+        text-align: left;
     }
 
 
