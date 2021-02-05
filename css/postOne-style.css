@@ -14,7 +14,7 @@ body{
 
 #pageLayout{
     /* background-color: rgba(175, 238, 238, 0.562); */
-    background-image: url(images/797214.jpg);
+    background-image: url(images/Background.jpg);
     background-size: cover;
     border-radius: 50px;
     display: grid;
@@ -261,13 +261,6 @@ h3{
         width: min-content;
         font-size: 0.6em;
     }
-
-
-    .quickLink{
-        padding: 10px;
-    }
-
-
 }
 
 /* * {

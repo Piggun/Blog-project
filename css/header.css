@@ -1,16 +1,11 @@
 /* Header ---------------------------------------------- Header */
 h1{
     font-size: 3em;
-    /* text-decoration: underline; */
-    font-weight: 600;
-    /* background-color: rgba(145, 252, 198, 0.74); */
+    font-weight: 700;
     border-radius: 10px;
     transition: 0.1s;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     text-shadow: 2px 4px rgba(0, 0, 0, 0.384);
     text-align: center;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
 }
 
 h1:hover{
