@@ -16,6 +16,7 @@ body{
     /* background-color: rgba(175, 238, 238, 0.562); */
     background-image: url(images/Background.jpg);
     background-size: cover;
+    background-position: center;
     border-radius: 50px;
     display: grid;
     /* margin-top: -30px; */
@@ -213,7 +214,7 @@ h3{
         rgba(255, 255, 255, 0));  
 }
 
-/* if screen smaller than 600px(mobile version) */
+/* if screen is narrower than 600px(Mobile version) */
 @media(max-width:600px){
     #pageLayout{
         grid-template-areas:
@@ -263,6 +264,13 @@ h3{
     }
 }
 
+
+/* if screen-width is smaller than 1000px */
+@media(max-width:800px){
+    .logo{
+        filter: brightness(50);   /* Increases logos' brigthness */
+    }
+}
 /* * {
     border: 1px solid red;
 } */
